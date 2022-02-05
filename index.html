@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="vh-100">
+      <div class="overlay"></div>
+      <section class="container d-flex gap-5 flex-column flex-lg-row">
+        <div class="text text-center text-lg-start">
+          <h1>
+            Learn to code by <br />
+            watching others
+          </h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="log">
+          <button class="btn try">
+            Try it free 7 days <span>then <br class="d-lg-none"> $20/mo. thereafter</span>
+          </button>
+          <form action="#">
+            <div class="fName position-relative">
+              <input
+                class="form-control "
+                type="text"
+                placeholder="First Name"
+              />
+              <div class="img">
+                <img src="./images/icon-error.svg" alt="" />
+              </div>
+              <div class="validation">First Name can not be empty</div>
+            </div>
+            <div class="lName position-relative">
+              <input class="form-control" type="text" placeholder="Last Name" />
+              <div class="img">
+                <img src="./images/icon-error.svg" alt="" />
+              </div>
+              <div class="validation">Last Name can not be empty</div>
+            </div>
+            <div class="position-relative">
+              <input
+                class="form-control email"
+                type="email"
+                placeholder="Email Address"
+              />
+              <div class="img">
+                <img src="./images/icon-error.svg" alt="" />
+              </div>
+              <div class="validation">Looks like this is not an email</div>
+            </div>
+            <div class="password position-relative">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="Password"
+              />
+              <div class="img">
+                <img src="./images/icon-error.svg" alt="" />
+              </div>
+              <div class="validation">Password can not be empty</div>
+            </div>
+            <div class="submit">
+              <button class="form-control" type="submit">
+                Claim your free trial
+              </button>
+            </div>
+            <small
+              >By clicking the button, you are agreeing to our
+              <span>Terms and Services</span></small
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

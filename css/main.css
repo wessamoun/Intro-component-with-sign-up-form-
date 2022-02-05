@@ -1,0 +1,167 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/bg-intro-desktop.png);
+  position: relative;
+}
+
+main .overlay {
+  background-color: #ff7a7a;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+main .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .text h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main .text p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main .log {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .log .try {
+  background-color: #6055a5;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.178);
+          box-shadow: 0 5px 0 rgba(0, 0, 0, 0.178);
+}
+
+main .log .try span {
+  font-weight: 400;
+  color: #b9b6d3;
+}
+
+main .log form {
+  background-color: white;
+  padding: 20px;
+}
+
+main .log form input {
+  margin-top: 15px;
+  outline: none;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+main .log form input:focus {
+  border: 1px solid #3e3c49;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .log form input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .log form input:-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .log form input::-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .log form input::placeholder {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .log form .validation {
+  display: none;
+  color: #ff7a7a;
+  text-align: right;
+  font-size: 10px;
+}
+
+main .log form .invalid {
+  border: 1px solid #ff7a7a;
+}
+
+main .log form img {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 3%;
+}
+
+main .log form button {
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #38cc8c;
+  -webkit-box-shadow: 0 2px 0 #158e5a;
+          box-shadow: 0 2px 0 #158e5a;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+main .log form button:hover {
+  background-color: #73ebb7;
+}
+
+main .log form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .log form small {
+  color: #b9b6d3;
+  font-size: 9px;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+}
+
+main .log form small span {
+  color: #ff7a7a;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,115 @@
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg-intro-desktop.png);
+  position: relative;
+  .overlay {
+    background-color: $red;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+  .log {
+    flex: 1;
+    .try {
+      background-color: $blue;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.178);
+      span {
+        font-weight: 400;
+        color: $grayishBlue;
+      }
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      input {
+        margin-top: 15px;
+        outline: none;
+        padding: 10px;
+        padding-left: 20px;
+        &:focus {
+          border: 1px solid $darkBlue;
+          outline: none;
+          box-shadow: none;
+        }
+        &::placeholder {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      .validation {
+        display: none;
+        color: $red;
+        text-align: right;
+        font-size: 10px;
+      }
+      .invalid {
+        border: 1px solid $red;
+      }
+      img {
+        display: none;
+        position: absolute;
+        top: 12px;
+        right: 3%;
+      }
+      button {
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: $green;
+        box-shadow: 0 2px 0 #158e5a;
+        padding: 10px 0;
+        outline: none;
+        border: none;
+        color: white;
+        font-size: 14px;
+        margin-top: 15px;
+        &:hover {
+          background-color: #73ebb7;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      small {
+        color: #b9b6d3;
+        font-size: 9px;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+        span {
+          color: $red;
+        }
+      }
+    }
+  }
+}
